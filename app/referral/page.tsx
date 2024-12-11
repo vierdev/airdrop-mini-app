@@ -16,7 +16,7 @@ export default function Referral() {
       </div>
       <div className="flex justify-center items-center mt-2">
         <p className="w-[69px] h-[21px] bg-white rounded-sm mr-3 text-center font-roadRage text-[17px]" style={{ textShadow: "-2px 0px #D8FA06", color: "#757675" }}>95679</p>
-        <span className="w-[21px] h-[21px] flex justify-center items-center bg-white rounded-sm"><img src="/copy.png" /></span>
+        <span className="w-[21px] h-[21px] flex justify-center items-center bg-white rounded-sm"><img src="/copy.png" alt="copy"/></span>
       </div>
       <div className="flex justify-center items-center mt-20">
         <img src="/Referral.png" alt="srepund1"/>
