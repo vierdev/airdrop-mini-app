@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide {
+    display: none;
+}
+@font-face {
+    font-family: "Road Rage";
+    src: url("./fonts/Road_Rage.otf");
+}
+.footer a {
+    font-family: "Road Rage";
+    font-size: 9px;
+}
