@@ -9,6 +9,17 @@
     font-family: "Road Rage";
     src: url("./fonts/Road_Rage.otf");
 }
+
+@font-face {
+    font-family: "Martian";
+    src: url("./fonts/MartianMono[wdth,wght].ttf");
+}
+
+@font-face {
+    font-family: "kvltura";
+    src: url("./fonts/Kvltura.ttf");
+}
+
 .footer a {
     font-family: "Road Rage";
     font-size: 9px;

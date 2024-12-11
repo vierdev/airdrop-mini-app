@@ -1,26 +1,26 @@
-import {FaArrowLeft} from "react-icons/fa"
-import {CiSettings } from "react-icons/ci"
+import { FaArrowLeft } from "react-icons/fa"
+import { CiSettings } from "react-icons/ci"
 import { useEffect, useState } from "react";
 import { SKIP_HEADER } from "@/config/const";
 // import { Text } from "@nextui-org/react";
 
 export interface HeaderProps {
-  first: string;
-  last: string;
+	first: string;
+	last: string;
 }
-export default function header({first, last}: HeaderProps) {
-	const [isHide, setIsHide] =  useState(false);
+export default function header({ first, last }: HeaderProps) {
+	const [isHide, setIsHide] = useState(false);
 
 	useEffect(() => {
 		const location = window.location.origin;
 		SKIP_HEADER.map((path: string) => {
-			if(path == location) {
+			if (path == location) {
 				setIsHide(true)
 			}
 		})
 	}, [])
 	return (
-		<div className={`flex justify-between ${isHide ? "hide":""}`}>
+		<div className={`flex justify-between items-center w-[354px] h-[26px]${isHide ? "hide" : ""}`}>
 			<span>
 				<FaArrowLeft />
 			</span>
@@ -31,7 +31,7 @@ export default function header({first, last}: HeaderProps) {
 				{last}
 			</p>
 			<span>
-				<CiSettings />
+				<CiSettings size={20}/>
 			</span>
 		</div>
 	)
