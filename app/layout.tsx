@@ -43,7 +43,7 @@ export default function RootLayout({
             <div className="flex justify-center items-center mt-20">
               <Header first="Tap to" last="Earn" />
             </div>
-            <main className="container mx-auto max-w-7xl pt-16 flex-grow">
+            <main className="container mx-auto max-w-7xl pt-12 flex-grow">
               {children}
             </main>
             <div className="flex justify-center">

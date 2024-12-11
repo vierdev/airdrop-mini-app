@@ -1,13 +1,15 @@
+"use client"
+
 import { FaArrowLeft } from "react-icons/fa"
 import { CiSettings } from "react-icons/ci"
 import { useEffect, useState } from "react";
 import { SKIP_HEADER } from "@/config/const";
-// import { Text } from "@nextui-org/react";
 
 export interface HeaderProps {
 	first: string;
 	last: string;
 }
+
 export default function header({ first, last }: HeaderProps) {
 	const [isHide, setIsHide] = useState(false);
 
