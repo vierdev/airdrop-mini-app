@@ -1,7 +1,7 @@
 "use client";
 
 import "@/styles/globals.css";
-import { Link } from "@nextui-org/link";
+import { Link, useLink } from "@nextui-org/link";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { Providers } from "./providers";
@@ -10,6 +10,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import Header from "@/components/header"
 import { PAGES } from "@/config/const";
+import { usePathname } from 'next/navigation'
 
 export default function RootLayout({
   children,
@@ -18,17 +19,20 @@ export default function RootLayout({
 }) {
   const [currentPath, setCurrentPath] = useState("");
   const [isHide, setIsHide] = useState(false);
+  const pathname = usePathname()
 
   useEffect(() => {
-    setCurrentPath(window.location.pathname);
+    setCurrentPath(pathname);
+    let is_hide = false;
     PAGES.map((page: any, key: number) => {
-      if (window.location.pathname == page.path) {
+      if (pathname == page.path) {
         if (!page.has_footer) {
-          setIsHide(true)
+          is_hide = true;
         }
       }
     })
-  }, [])
+    setIsHide(is_hide);
+  }, [pathname])
   return (
     <html suppressHydrationWarning lang="en">
       <head />
