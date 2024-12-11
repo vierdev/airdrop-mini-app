@@ -36,9 +36,9 @@ export default function Header(path: HeaderProps) {
 			title =
 				<div className="flex justify-between items-center">
 					<p className="text-[24px] font-Martian">Refer</p>
-					<p className="text-[24px] font-Martian relative">ral
+					<div className="text-[24px] font-Martian relative">ral
 						<div className="absolute top-0 left-2 font-roadRage text-[25px]" style={{ textShadow: "-4px 0px yellow", color: "#E545F4" }}>RAL</div>
-					</p>
+					</div>
 				</div>
 		} else if (path.path == "/airdrop") {
 			title =

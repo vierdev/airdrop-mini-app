@@ -41,9 +41,9 @@ export default function Game() {
         </div>
       </div>
       <div>
-        <p className="font-roadRage text-[30px] mt-10 text-[#2FEA2F]" onClick={() => {
+        <div className="font-roadRage text-[30px] mt-10 text-[#2FEA2F]" onClick={() => {
           setIsOpenDialog(true)
-        }}>TAP ME</p>
+        }}>TAP ME</div>
       </div>
       <div className="flex flex-col justify-center items-center mt-[90px] h-[56px]">
         <img src="./progressBar.png" className="pb-4" alt="srepund1" />

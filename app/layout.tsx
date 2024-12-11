@@ -55,7 +55,7 @@ export default function RootLayout({
                         key={index}
                         href={page.path}
                       >
-                        <p className={currentPath == page.path ? "text-[#D8FA06]" : "text-white"} onClick={() => setCurrentPath(page.path)}>{page.name}</p>
+                        <div className={currentPath == page.path ? "text-[#D8FA06]" : "text-white"} onClick={() => setCurrentPath(page.path)}>{page.name}</div>
                       </Link> : null
                   )
                 }
