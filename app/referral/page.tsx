@@ -19,7 +19,7 @@ export default function Referral() {
         <span className="w-[21px] h-[21px] flex justify-center items-center bg-white rounded-sm"><img src="/copy.png" /></span>
       </div>
       <div className="flex justify-center items-center mt-20">
-        <img src="/Referral.png" />
+        <img src="/Referral.png" alt="srepund1"/>
       </div>
       <div className="flex justify-center items-center mt-3">
         <p className="font-kvltura italic text-[20px] text-[#D8FA06]" style={{ textShadow: "-0.2px 0.2px 0 #E545F4, 0.2px 0.2px 0 #E545F4, 0.2px -0.2px 0 #E545F4,-0.2px -0.2px 0 #E545F4;" }}>RFD TOKen</p>
@@ -34,9 +34,9 @@ export default function Referral() {
         </div>
       </div>
       <div className="flex justify-between items-center w-[305px]">
-        <span><img src="/LeftArrow.png" /></span>
+        <span><img src="/LeftArrow.png" alt="srepund1"/></span>
         <p className="font-roadRage text-[#D8FA06] text-[31px]">300</p>
-        <span><img src="/RightArrow.png" /></span>
+        <span><img src="/RightArrow.png" alt="srepund1"/></span>
       </div>
       <div className="flex justify-center items-center">
         <p className="text-[#2FEA2F] text-[11px]">_total_earn_token_</p>

@@ -53,7 +53,7 @@ export default function Referral() {
           <p className="font-kvltura text-white italic text-[14px]">Claimed</p>
         </div>
         <div className="flex flex-col justify-center items-center mt-10">
-          <span><img src="/progressBar20.png" /></span>
+          <span><img src="/progressBar20.png" alt="srepund1"/></span>
           <p className="font-kvltura text-[#D8FA06] italic text-[14px]" style={{ textShadow: "-0.2px 0.2px 0 #E545F4, 0.2px 0.2px 0 #E545F4, 0.2px -0.2px 0 #E545F4,-0.2px -0.2px 0 #E545F4;" }}>20%</p>
         </div>
         <div className="flex flex-col justify-center items-center mt-3">

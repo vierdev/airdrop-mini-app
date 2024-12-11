@@ -10,7 +10,7 @@ export interface HeaderProps {
 	last: string;
 }
 
-export default function header({ first, last }: HeaderProps) {
+export default function Header({ first, last }: HeaderProps) {
 	const [isHide, setIsHide] = useState(false);
 
 	useEffect(() => {
@@ -33,7 +33,7 @@ export default function header({ first, last }: HeaderProps) {
 				{last}
 			</p>
 			<span>
-				<CiSettings size={20}/>
+				<CiSettings size={20} />
 			</span>
 		</div>
 	)
