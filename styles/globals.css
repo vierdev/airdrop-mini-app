@@ -3,24 +3,43 @@
 @tailwind utilities;
 
 .hide {
-    display: none;
-}
-@font-face {
-    font-family: "Road Rage";
-    src: url("./fonts/Road_Rage.otf");
+	display: none;
 }
 
 @font-face {
-    font-family: "Martian";
-    src: url("./fonts/MartianMono_SemiExpanded-Regular-BF63f421c0611b4.ttf");
+	font-family: "Road Rage";
+	src: url("./fonts/Road_Rage.otf");
 }
 
 @font-face {
-    font-family: "kvltura";
-    src: url("./fonts/Kvltura.ttf");
+	font-family: "Martian";
+	src: url("./fonts/MartianMono_SemiExpanded-Regular-BF63f421c0611b4.ttf");
+}
+
+@font-face {
+	font-family: "kvltura";
+	src: url("./fonts/Kvltura.ttf");
 }
 
 .footer a {
-    font-family: "Road Rage";
-    font-size: 9px;
+	font-family: "Road Rage";
+	font-size: 9px;
+}
+
+.modal-dialog {
+	padding: 0px !important;
+}
+
+.modal-dialog>button {
+	display: none;
+}
+
+section{
+	width: fit-content !important;
+	border-radius: 2px !important;
+}
+
+div[tabindex="-1"] .fixed{
+	justify-content: center;
+	align-items: center;
 }

@@ -41,7 +41,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="flex flex-col h-screen bg-[url('/background.png')] bg-no-repeat">
             <div className="flex justify-center items-center mt-20">
-              <Header first="Tap to" last="Earn" />
+              <Header path={currentPath}/>
             </div>
             <main className="container mx-auto max-w-7xl pt-12 flex-grow">
               {children}
@@ -55,7 +55,7 @@ export default function RootLayout({
                         key={index}
                         href={page.path}
                       >
-                        <p className={currentPath == page.path ? "text-[#D8FA06]" : "text-white"}>{page.name}</p>
+                        <p className={currentPath == page.path ? "text-[#D8FA06]" : "text-white"} onClick={() => setCurrentPath(page.path)}>{page.name}</p>
                       </Link> : null
                   )
                 }
