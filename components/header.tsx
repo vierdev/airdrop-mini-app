@@ -2,7 +2,7 @@
 
 import { FaArrowLeft } from "react-icons/fa"
 import { CiSettings } from "react-icons/ci"
-import { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation'
 
 interface HeaderProps {
 	path: string
@@ -10,6 +10,7 @@ interface HeaderProps {
 
 export default function Header(path: HeaderProps) {
 
+	const router = useRouter()
 	const renderHeaderName = () => {
 		let title;
 		if (path.path == "/game") {
@@ -60,9 +61,9 @@ export default function Header(path: HeaderProps) {
 
 	return (
 		<div className={`flex justify-between items-center w-[354px] h-[26px] ${path.path == "/" ? "hide" : ""}`}>
-			<span>
+			<button onClick={router.back}>
 				<FaArrowLeft />
-			</span>
+			</button>
 			<div className="flex">
 				{
 					renderHeaderName()
@@ -70,7 +71,7 @@ export default function Header(path: HeaderProps) {
 			</div>
 			<span>
 				<CiSettings size={20} />
-			</span>
+			</span> 
 		</div>
 	)
 }

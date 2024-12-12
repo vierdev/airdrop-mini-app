@@ -44,13 +44,13 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="flex flex-col h-screen bg-[url('/background.png')] bg-no-repeat">
-            <div className="flex justify-center items-center mt-20">
+            <div className="flex justify-center items-center mt-14">
               <Header path={currentPath}/>
             </div>
-            <main className="container mx-auto max-w-7xl pt-12 flex-grow">
+            <main className="container mx-auto max-w-7xl pt-12 flex-grow justify-center items-center">
               {children}
             </main>
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center">
               <footer className={`w-[418px] h-[72px] bg-[#16161675] rounded-xl flex items-center justify-between p-3 footer ${isHide ? "hide" : "flex"}`}>
                 {
                   PAGES.map((page: any, index: number) =>

@@ -2,8 +2,8 @@ import { Link } from "@nextui-org/link";
 
 export default function Home() {
   return (
-    <div className="h-full flex flex-col items-center">
-      <div className="flex flex-col justify-center items-center pt-[230px]">
+    <div className="h-full flex flex-col justify-center  items-center">
+      <div className="flex flex-col justify-center items-center ">
         <div className="relative">
           <div className="top-0 text-[37px] font-Martian tracking-[.08em]">
             welcome_to
@@ -16,7 +16,7 @@ export default function Home() {
           <div className="top-0 text-[62px] font-bold font-Martian tracking-[.08em]" >
             refund
           </div>
-          <div className="absolute top-[-10px] left-[64px] text-[82px] font-roadRage" style={{ textShadow: "-8px 0px yellow", color: "#E545F4"}}>
+          <div className="absolute top-[-10px] left-[64px] text-[82px] font-roadRage" style={{ textShadow: "-8px 0px yellow", color: "#E545F4" }}>
             RFD
           </div>
         </div>
