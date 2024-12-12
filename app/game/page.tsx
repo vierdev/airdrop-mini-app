@@ -6,6 +6,8 @@ import { useState } from "react";
 export default function Game() {
   const [isOpenDialog, setIsOpenDialog] = useState(false);
 
+  const [happenClick, setHappenClick] = useState(0)
+
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center bg-[#161616B5] border-[#2FEA2F69] w-[315px] h-[58px] rounded border-1">
@@ -14,7 +16,7 @@ export default function Game() {
         </p>
       </div>
       <div className="mt-5">
-        <button onClick={() => {}}><img src="/EarnAvatar.png" alt="EarnAvatar" /></button>
+        <button onClick={() => { setHappenClick(prev => prev + 1) }}><img src="/EarnAvatar.png" alt="EarnAvatar" /></button>
         <div className="absolute top-[31%] left-[71%]">
           <img src="/srepund.png" alt="srepund" />
         </div>
@@ -31,13 +33,13 @@ export default function Game() {
           <img src="/srepund.png" alt="srepund1" />
         </div>
         <div className="absolute top-[65%] left-[85%]">
-          <p className="font-roadRage text-[23px] mt-10 text-[#F61B5C] rotate-[25deg]">+30</p>
+          <p className={`font-roadRage text-[23px] mt-10 text-[#F61B5C] rotate-[25deg] ${happenClick < 3 ? "hide" : ""}`}>+30</p>
         </div>
         <div className="absolute top-[65%] left-[5%]">
-          <p className="font-roadRage text-[23px] mt-10 text-[#FF43FA] rotate-[25deg]">+20</p>
+          <p className={`font-roadRage text-[23px] mt-10 text-[#FF43FA] rotate-[25deg] ${happenClick < 2 ? "hide" : ""}`}>+20</p>
         </div>
         <div className="absolute top-[20%] left-[55%]">
-          <p className="font-roadRage text-[23px] mt-10 text-[#E545F4] rotate-[25deg]">+10</p>
+          <p className={`font-roadRage text-[23px] mt-10 text-[#E545F4] rotate-[25deg] ${happenClick < 1 ? "hide" : ""}`}>+10</p>
         </div>
       </div>
       <div>
