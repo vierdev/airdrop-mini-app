@@ -1,8 +1,8 @@
 "use client"
 
-import { FaArrowLeft } from "react-icons/fa"
+// import { FaArrowLeft } from "react-icons/fa"
 import { CiSettings } from "react-icons/ci"
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 
 interface HeaderProps {
 	path: string
@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export default function Header(path: HeaderProps) {
 
-	const router = useRouter()
+	// const router = useRouter()
 	const renderHeaderName = () => {
 		let title;
 		if (path.path == "/game") {
@@ -60,11 +60,11 @@ export default function Header(path: HeaderProps) {
 	}
 
 	return (
-		<div className={`flex justify-between items-center w-[354px] h-[26px] ${path.path == "/" ? "hide" : ""}`}>
-			<button onClick={router.back}>
+		<div className={`flex justify-center items-center w-[354px] h-[26px] ${path.path == "/" ? "hide" : ""}`}>
+			{/* <button onClick={router.back}>
 				<FaArrowLeft />
-			</button>
-			<div className="flex">
+			</button> */}
+			<div className="flex w-[300px] justify-center items-center">
 				{
 					renderHeaderName()
 				}
