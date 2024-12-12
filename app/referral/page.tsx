@@ -5,10 +5,8 @@ import useClipboard from "react-use-clipboard";
 
 export default function Referral() {
   const [point, setPoint] = useState(956759)
-  const [isCopied, setCopied] = useClipboard("956759", { successDuration: 1000, })
-  // useEffect(() => {
-
-  // }, [])
+  const [isCopied, setCopied] = useClipboard(String(point))
+  
   return (
     <div className="flex flex-col justify-center items-center">
       <p className="text-[#D8FA06] font-Martian text-[11px] tracking-[-.1em] pb-2">Earn More with Referrals</p>
@@ -24,7 +22,8 @@ export default function Referral() {
       </div>
       <div className="flex justify-center items-center mt-2">
         <p className="w-[69px] h-[21px] bg-white rounded-sm mr-3 text-center font-roadRage text-[17px]" style={{ textShadow: "-2px 0px #D8FA06", color: "#757675" }}>{point}</p>
-        <button className="w-[21px] h-[21px] flex justify-center items-center bg-white rounded-sm" onClick={() => {setCopied;console.log("clipboardclick");
+        <button className="w-[21px] h-[21px] flex justify-center items-center bg-white rounded-sm" onClick={() => {
+          setCopied();
         }}><img src="/copy.png" alt="copy" /></button>
       </div>
       <div className="flex justify-center items-center mt-20">

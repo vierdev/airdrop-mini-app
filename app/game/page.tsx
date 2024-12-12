@@ -14,7 +14,7 @@ export default function Game() {
         </p>
       </div>
       <div className="mt-5">
-        <img src="/EarnAvatar.png" alt="EarnAvatar" />
+        <button onClick={() => {}}><img src="/EarnAvatar.png" alt="EarnAvatar" /></button>
         <div className="absolute top-[31%] left-[71%]">
           <img src="/srepund.png" alt="srepund" />
         </div>
