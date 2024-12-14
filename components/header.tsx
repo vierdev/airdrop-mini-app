@@ -1,14 +1,13 @@
 "use client"
 
-// import { FaArrowLeft } from "react-icons/fa"
+import React from "react"
 import { CiSettings } from "react-icons/ci"
-// import { useRouter } from 'next/navigation'
 
 interface HeaderProps {
 	path: string
 }
 
-export default function Header(path: HeaderProps) {
+const Header: React.FC<HeaderProps> = (path) => {
 
 	// const router = useRouter()
 	const renderHeaderName = () => {
@@ -71,7 +70,9 @@ export default function Header(path: HeaderProps) {
 			</div>
 			<span>
 				<CiSettings size={20} />
-			</span> 
+			</span>
 		</div>
 	)
 }
+
+export default Header

@@ -15,5 +15,4 @@ export let PAGES: any = [
     { name: "Referral", path: "/referral", has_footer: true, has_header: true, show_menu: true },
     { name: "Air Drop", path: "/airdrop", has_footer: true, has_header: true, show_menu: true },
     { name: "Tasks", path: "/tasks", has_footer: true, has_header: true, show_menu: true },
-
 ]
