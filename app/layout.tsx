@@ -20,6 +20,7 @@ export default function RootLayout({
           "h-screen w-screen bg-background font-sans antialiased",
           fontSans.variable,
         )}
+        style={{backgroundImage: "url('/background.png')"}}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           {children}

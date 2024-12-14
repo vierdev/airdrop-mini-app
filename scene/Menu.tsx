@@ -18,7 +18,7 @@ const MenuTemplate: React.FC<MenuTemplateProps> = ({ children }) => {
 	}, [pathname])
 
 	return (
-		<div className="relative flex flex-col h-screen w-screen overflow-hidden bg-[url('/background.png')] bg-no-repeat">
+		<div className="relative flex flex-col h-screen w-screen overflow-hidden bg-no-repeat">
 			<div className="flex justify-center items-center" style={{ marginTop: "56px" }}>
 				<Header path={currentPath} />
 			</div>
